@@ -1,0 +1,296 @@
+body {
+   
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+#topnav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 80px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#navlist {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.nav-link {
+    font-family: "Inter", "Noto Sans KR", sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: rgba(252, 169, 0, 1);
+}
+
+#main {
+    display: flex;
+    flex-direction: row;
+}
+
+#left {
+    padding-top: 20px;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 70px;
+}
+
+#right {
+    padding-top: 50px;
+    width: 70vw;
+    padding-bottom: 50px;
+}
+
+#side-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px;
+}
+
+#side-buttons button {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(86, 86, 86, 1);
+    border-radius: 5px;
+    font-family: "Inter", "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(86, 86, 86, 1);
+    margin-right: 10px;
+    background-color: white;
+    padding: 5px 15px 5px 15px;
+}
+
+#user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    width: 70%;
+}
+
+#user-info div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#user-info span {
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    line-height: 24px;
+}
+
+#calendar, #schedule {
+    width: 80%;
+    height: 353px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: 16px;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+#schedule {
+    justify-content: flex-start;
+}
+
+#schedule-head {
+    width:80%;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+}
+
+#schedule-head p {
+    color:black;
+    font-family:'Inter', sans-serif;
+    font-weight:400;
+    font-size: 20px;
+}
+
+#schedule-head span {
+    font-size: 17px;
+    background-color: rgba(217, 217, 217, 1);
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+#calendar-head {
+    margin-bottom: 15px;
+}
+
+#previous, #next {
+    background-color: white;
+    font-size: 24px;
+    border: none;
+}
+
+#year-month {
+    color: #000;
+    font-size: 25px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+#calendar img {
+    width: 274px;
+    height: 203px;
+}
+
+#calendar-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#dashboard div {
+    width: 100%;
+}
+
+thead {
+    background-color: rgba(248, 248, 248, 1);
+    width: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+#sales-status td {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    color: rgba(31, 106, 255, 1);
+    line-height: 36px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+td {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: "Inter", sans-serif;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+td span {
+    color: black;
+    line-height: 24px;
+    font-size: 20px;
+}
+
+th {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+thead th {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-color: rgba(173, 173, 173, 1);
+    border-bottom-color: rgba(173, 173, 173, 1);
+}
+
+td {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(173, 173, 173, 1);
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#daily-sales td, #weekly-sales td {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(173, 173, 173, 1);
+    text-align: right;
+}
+
+#customer-consultation td {
+    
+    text-align: center;
+}
+
+#customer-consultation tr {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(173, 173, 173, 1);
+}
+
+#daily-sales th, #weekly-sales th, #monthly-sales th, #customer-consultation th {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(173, 173, 173, 1);
+}
+
+#monthly-sales td {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(173, 173, 173, 1);
+    text-align: center;
+    padding-right: 1px;
+    padding-left: 1px;
+}
+
+table, th, td {
+    border-collapse: collapse;
+}
+
+p {
+    font-size: 15px;
+    text-align: right;
+    color: rgba(173, 173, 173, 1);
+    line-height: 18px;
+    font-family: "Inter", sans-serif;
+}
+
+.inquiry-date, .qa {
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: rgba(173, 173, 173, 1);
+    text-align: right;
+}
+

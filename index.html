@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="styles.css" />
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav id="topnav">
+            <a href="#">
+                <img id="logo" src="assets/images/bongus-logo.png" alt="Bongus Logo" width="180" height="140" />
+            </a>
+                <ul id="navlist">
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/기본설정.html">기본설정</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">상품관리</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">회원관리</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">주문관리</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">프로모션</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">정산</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">통계</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">게시판관리</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">디자인관리</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Bizcard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">단체주문</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Yellowkit</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="main">
+            <aside id="left">
+                <div id="side-buttons">
+                    <button type="button" id="logout">로그아웃</button>
+                    <button type="button" id="manual">메뉴얼</button>
+                    <button type="button" id="shopping-mall">쇼핑몰</button>
+                </div>
+                <div id="user-info">
+                    <div>
+                        <span style="font-weight:400;">센터</span>
+                        <span style="color:rgba(252, 169, 0, 1);font-weight:600;">wpod</span>
+                    </div>
+                    <div>
+                        <span>사용자</span>
+                        <span style="color:rgba(252, 169, 0, 1);font-weight:600;">bongap</span>
+                    </div>
+                    <div>
+                        <span>SMS</span>
+                        <span style="font-weight:500;">0 Calls <span style="background-color: rgba(217, 217, 217, 1);border-radius:2px;font-size:17px;padding-right:5px;padding-left:5px;">충전</span></span>
+                    </div>
+                </div>
+                <div id="calendar">
+                    <div id="calendar-head">
+                        <button id="previous" type="button">&lt;</button>
+                        <p id="year-month">2024-11</p> <!--YYYY-MM format-->
+                        <button id="next" type="button">&gt;</button>
+                    </div>
+                    <img src="assets/images/calendar.png" alt="Calendar view pic" />
+                    <!--
+                    <div id="month-view">
+                        <div id="days">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div id="month-container">
+
+                        </div>
+                    </div>
+                    -->
+                </div>
+                <div id="schedule" style="display:flex;flex-direction:column;">
+                    <div id="schedule-head">
+                        <p>오늘의 일정</p>
+                        <span>수정</span>
+                    </div>
+                    <div id="schedule-content" style="width:80%;">
+                        <p style="text-align:left;">등록된 일정이 없습니다.</p>
+                    </div>
+                </div>
+            </aside>
+            <main id="right">
+                <div id="dashboard">
+                    <div>
+                        <h3>판매현황</h3>
+                        <table id="sales-status">
+                          <thead>
+                            <tr>
+                                <th>미입금(승인요청)</th>
+                                <th>입금완료(승인완료)</th>
+                                <th>상품제작중</th>
+                                <th>발송대기</th>
+                                <th>출고완료</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <td>0<span>건</span></td>
+                            <td>0<span>건</span></td>
+                            <td>0<span>건</span></td>
+                            <td>0<span>건</span></td>
+                            <td>3,205<span>건</span></td>
+                          </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <h3 style="margin-top: 80px;">일단위 판매현황</h3>
+                        <table id="daily-sales" >
+                            <thead>
+                                <tr>
+                                    <th>6일전</th>
+                                    <th>5일전</th>
+                                    <th>4일전</th>
+                                    <th>3일전</th>
+                                    <th>2일전</th>
+                                    <th>어제</th>
+                                    <th>오늘</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                              <tr> 
+                                <td>0원</td>
+                                <td>0원</td>
+                                <td>0원</td>
+                                <td>0원</td>
+                                <td>0원</td>
+                                <td>0원</td>
+                                <td>0원</td>
+                              </tr>
+                              <tr> 
+                                <td>0건</td>
+                                <td>0건</td>
+                                <td>0건</td>
+                                <td>0건</td>
+                                <td>0건</td>
+                                <td>0건</td>
+                                <td>0건</td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <h3 style="margin-top: 80px;">주단위 판매현황</h3>
+                        <table id="weekly-sales">
+                            <thead>
+                                <tr>
+                                    <th>3주전</th>
+                                    <th>2주전</th>
+                                    <th>지난주</th>
+                                    <th>이번주</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>119,200원</td>
+                                    <td>30,000원</td>
+                                    <td>331,300원</td>
+                                    <td>0원</td>
+                                </tr>
+                                <tr>
+                                    <td>7건</td>
+                                    <td>2건</td>
+                                    <td>14건</td>
+                                    <td>0건</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <h3 style="margin-top: 80px;">월별 판매현황</h3>
+                        <table id="monthly-sales">
+                            <thead>
+                                <tr>
+                                    <th>01월</th>
+                                    <th>02월</th>
+                                    <th>03월</th>
+                                    <th>04월</th>
+                                    <th>05월</th>
+                                    <th>06월</th>
+                                    <th>07월</th>
+                                    <th>08월</th>
+                                    <th>09월</th>
+                                    <th>10월</th>
+                                    <th>11월</th>
+                                    <th>12월</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>23 (641,100)</td>
+                                    <td>22 (656,200)</td>
+                                    <td>20 (342,300)</td>
+                                    <td>32 (1,037,200)</td>
+                                    <td>38 (949,500)</td>
+                                    <td>13 (413,700)</td>
+                                    <td>16 (243,800)</td>
+                                    <td>49 (1,041,900)</td>
+                                    <td>27 (701,600)</td>
+                                    <td>19 (366,200)</td>
+                                    <td>14 (331,300)</td>
+                                    <td>0 (0)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>*모든 판매현황은 입금/승인일 완료 기준입니다.</p>
+                    </div>
+                    <div>
+                        <h3 style="margin-top: 80px;">고객상담</h3>
+                        <table id="customer-consultation">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">1:1문의</th>
+                                    <th>Q&A</th>
+                                    <th>상품후기</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="inquiry">택배비 못 누름</td>
+                                    <td class="inquiry-date">2024-05-27</td>
+                                    <td class="qa"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="inquiry">반품문의</td>
+                                    <td class="inquiry-date">2024-05-27</td>
+                                    <td class="qa"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="inquiry">빵의자 배송건</td>
+                                    <td class="inquiry-date">2024-08-27</td>
+                                    <td class="qa"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="inquiry">이거 취소해주세요</td>
+                                    <td class="inquiry-date">2024-11-27</td>
+                                    <td class="qa"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="inquiry">실사스티커 누락</td>
+                                    <td class="inquiry-date">2022-11-15</td>
+                                    <td class="qa"></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
